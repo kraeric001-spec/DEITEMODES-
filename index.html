@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEITE PARFUMERIE</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(black, #111);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: gold;
+    margin: 0;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background: gold;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>DEITE PARFUMERIE</h1>
+    <p>L'élégance à chaque vaporisation</p>
+</header>
+
+<section>
+    <h2>Nos Parfums</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539" alt="Parfum 1">
+            <h3>Parfum Élégance</h3>
+            <p>Longue tenue - Luxe intense</p>
+            <button onclick="order()">Commander</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de" alt="Parfum 2">
+            <h3>Parfum Prestige</h3>
+            <p>Fragrance raffinée & séduisante</p>
+            <button onclick="order()">Commander</button>
+        </div>
+    </div>
+</section>
+
+<a class="whatsapp-btn" href="https://wa.me/2250788158227" target="_blank">
+💬 Commander sur WhatsApp
+</a>
+
+<script>
+function order() {
+    window.open("https://wa.me/2250788158227?text=Bonjour%20je%20veux%20commander%20un%20parfum%20DEITE%20PARFUMERIE");
+}
+</script>
+
+</body>
+</html>
